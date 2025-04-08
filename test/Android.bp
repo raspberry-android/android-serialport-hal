@@ -1,12 +1,12 @@
 cc_binary {
-    name: "vendor.labworks.serialport-test",
+    name: "vendor.raspdroid.serialport-test",
     srcs: [
         "main.cpp"
     ],
     shared_libs: [
         "libbase",
         "libbinder_ndk",
-        "vendor.labworks.serialport-ndk",
+        "vendor.raspdroid.serialport-ndk",
     ],
     system_ext_specific: true,
 }

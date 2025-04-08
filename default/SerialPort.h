@@ -1,10 +1,10 @@
 #pragma once
 
-#include <aidl/vendor/labworks/serialport/BnSerialPort.h>
+#include <aidl/vendor/raspdroid/serialport/BnSerialPort.h>
 
 namespace aidl {
 namespace vendor {
-namespace labworks {
+namespace raspdroid {
 namespace serialport {
 
 class SerialPort : public BnSerialPort {
@@ -13,6 +13,6 @@ class SerialPort : public BnSerialPort {
 };
 
 } // namespace serialport
-} // namespace labworks
+} // namespace raspdroid
 } // namespace vendor
 } // namespace aidl

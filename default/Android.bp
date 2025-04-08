@@ -1,5 +1,5 @@
 cc_binary {
-    name: "vendor.labworks.serialport-service",
+    name: "vendor.raspdroid.serialport-service",
     srcs: [
         "SerialPort.cpp",
         "main.cpp",
@@ -7,9 +7,9 @@ cc_binary {
     shared_libs: [
         "libbase",
         "libbinder_ndk",
-        "vendor.labworks.serialport-ndk",
+        "vendor.raspdroid.serialport-ndk",
     ],
-    init_rc: ["vendor.labworks.serialport-service.rc"],
+    init_rc: ["vendor.raspdroid.serialport-service.rc"],
     system_ext_specific: true,
     relative_install_path: "hw",
 }

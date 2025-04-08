@@ -4,9 +4,10 @@
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
-using ::aidl::vendor::labworks::serialport::SerialPort;
+using ::aidl::vendor::raspdroid::serialport::SerialPort;
 
-int main() {
+int main ()
+{
     LOG(INFO) << "Starting HAL";
 
     ABinderProcess_setThreadPoolMaxThreadCount(16);
@@ -22,5 +23,6 @@ int main() {
     ABinderProcess_startThreadPool();
     ABinderProcess_joinThreadPool();
 
-    return EXIT_FAILURE;  // should not reach here
+    return EXIT_FAILURE;
+
 }

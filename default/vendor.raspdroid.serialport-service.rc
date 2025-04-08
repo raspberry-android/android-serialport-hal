@@ -1,0 +1,5 @@
+service vendor.raspdroid.serialport-service /system_ext/bin/hw/vendor.raspdroid.serialport-service
+    seclabel u:r:su:s0
+    class hal
+    user root
+    group root

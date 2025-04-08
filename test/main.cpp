@@ -1,8 +1,8 @@
-#include <aidl/vendor/labworks/serialport/ISerialPort.h>
+#include <aidl/vendor/raspdroid/serialport/ISerialPort.h>
 #include <android/binder_manager.h>
 #include <iostream>
 
-using aidl::vendor::labworks::serialport::ISerialPort;
+using aidl::vendor::raspdroid::serialport::ISerialPort;
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     /* TX */
     if (argc >= 2) {
         for (int i = 0; argv[1][i]; i++) {
-            // TODO: call tx()
+            serialport->tx(argv[1][i]);
         }
     }
 
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     else {
        while(1) {
             int8_t data = 0;
-            // TODO: call rx()
+            serialport->rx(&data);
             std::cout << data << std::flush;
         }
     }

@@ -1,7 +1,7 @@
 aidl_interface {
-    name: "vendor.labworks.serialport",
-    srcs: ["vendor/labworks/serialport/*.aidl"],
-    owner: "Embedded Labworks",
+    name: "vendor.raspdroid.serialport",
+    srcs: ["vendor/raspdroid/serialport/*.aidl"],
+    owner: "Raspdroid",
     system_ext_specific: true,
     unstable: true,
     backend: {
